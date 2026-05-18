@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>эвакуатор-мск-24 — Круглосуточно</title>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106479138', 'ym');
+
+        ym(106479138, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/106479138" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <style>
+        :root {
+            --orange: #ff8a00;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #f1f3f6, #ffffff);
+            color: #2b2f33;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 28px 16px;
+        }
+
+        .glass {
+            background: rgba(255,255,255,0.32);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 22px;
+            border: 1px solid rgba(255,255,255,0.45);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+        }
+
+        /* ===== Верхняя шапка ===== */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 22px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 800;
+            line-height: 1.1;
+        }
+
+        .logo span {
+            color: var(--orange);
+        }
+
+        .phone {
+            font-size: 18px;
+            font-weight: 800;
+            color: #000;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .phone:hover {
+            color: var(--orange);
+        }
+
+        /* ===== Герой с фоном (картинка + стекло) ===== */
+        .hero-image-header {
+            min-height: 70vh;
+            background: linear-gradient(rgba(255,255,255,0.15), rgba(43,47,51,0.35)),
+                        url("images/tow-main.jpg") center/cover no-repeat #2b2f33;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 16px;
+        }
+
+        .header-glass {
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            padding: 30px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.28);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255,255,255,0.4);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+        }
+
+        .header-glass h1 {
+            font-size: 36px;
+            margin: 0 0 12px;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .header-glass h1 span {
+            color: #ffe0b8;
+        }
+
+        .header-glass .subtitle {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.35);
+        }
+
+        .header-glass .phone-big {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .header-glass .phone-big a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .header-glass .btn {
+            display: inline-block;
+            padding: 16px 30px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #ff9a1f, #ff7a00);
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 10px 28px rgba(255,138,0,0.4);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .header-glass .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 32px rgba(255,138,0,0.5);
+        }
+
+        /* ===== Преимущества ===== */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
+        }
+
+        .feature {
+            padding: 26px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 14px 32px rgba(0,0,0,0.1);
+        }
+
+        .feature h3 {
+            margin: 0 0 8px;
+            color: var(--orange);
+            font-size: 18px;
+        }
+
+        /* ===== Секции текста ===== */
+        section h2 {
+            text-align: center;
+            font-size: 28px;
+            margin: 0 0 20px;
+            color: var(--orange);
+        }
+
+        .section-block {
+            padding: 26px;
+            margin-bottom: 22px;
+        }
+
+        .text {
+            font-size: 16px;
+            color: #2b2f33;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            border-left: 4px solid var(--orange);
+        }
+
+        .services-list {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .services-list li {
+            margin-bottom: 10px;
+            list-style: none;
+            position: relative;
+        }
+
+        .services-list li::before {
+            content: "—";
+            position: absolute;
+            left: -20px;
+        }
+
+        /* ===== Калькулятор ===== */
+        .calculator-wrap {
+            max-width: 420px;
+            margin: 0 auto 28px;
+            padding: 22px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.55);
+            backdrop-filter: blur(20px) saturate(140%);
+            -webkit-backdrop-filter: blur(20px) saturate(140%);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.5);
+        }
+
+        .calculator-wrap::before {
+            content: "";
+            position: absolute;
+            inset: -60%;
+            background: linear-gradient(120deg, transparent 40%, rgba(255, 165, 0, 0.35), transparent 60%);
+            animation: glassMove 7s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes glassMove {
+            from { transform: translateX(-50%); }
+            to   { transform: translateX(50%); }
+        }
+
+        .calculator-wrap h2 {
+            margin: 0 0 8px;
+        }
+
+        .calculator-wrap label {
+            display: block;
+            margin-top: 14px;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+        }
+
+        .calculator-wrap select,
+        .calculator-wrap input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 6px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            background: rgba(255,255,255,0.85);
+            position: relative;
+            z-index: 1;
+        }
+
+        .calculator-wrap .total {
+            margin-top: 22px;
+            padding: 16px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 800;
+            background: rgba(255,193,7,0.25);
+            border-radius: 14px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .calculator-wrap .contact {
+            margin-top: 18px;
+            padding: 14px;
+            text-align: center;
+            border-radius: 14px;
+            background: rgba(255, 152, 0, 0.18);
+            position: relative;
+            z-index: 1;
+        }
+
+        .calculator-wrap .contact a {
+            display: block;
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--orange);
+            text-decoration: none;
+        }
+
+        .calculator-wrap .note {
+            margin-top: 12px;
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .calculator-wrap .disclaimer {
+            margin-top: 14px;
+            font-size: 12px;
+            color: #444;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .order-btn {
+            margin-top: 16px;
+            width: 100%;
+            padding: 14px 16px;
+            border: none;
+            border-radius: 14px;
+            font-size: 16px;
+            font-weight: 800;
+            color: #fff;
+            background: linear-gradient(135deg, #ff9a1f, #ff7a00);
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+            transition: transform 0.2s ease;
+        }
+
+        .order-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* ===== Тарифы — горизонтальный скролл ===== */
+        .tariffs-heading {
+            text-align: center;
+            font-size: 28px;
+            margin: 0 0 16px;
+            color: var(--orange);
+        }
+
+        .scroll-container {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 0 16px;
+            margin: 0;
+            -webkit-overflow-scrolling: touch;
+            scroll-behavior: smooth;
+            width: 100%;
+        }
+
+        .scroll-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scroll-container {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .cards {
+            display: inline-flex;
+            gap: 12px;
+            padding: 8px 0;
+        }
+
+        .card {
+            min-width: 240px;
+            flex: 0 0 auto;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.3s;
+            background: #fff;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-content h3 {
+            color: var(--orange);
+            margin: 0;
+            padding: 16px;
+            font-size: 16px;
+        }
+
+        .card-content p {
+            color: #2b2f33;
+            padding: 0 16px 16px;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            padding: 24px;
+            background-color: #f8f8f8;
+            color: #555;
+            border-top: 1px solid #eee;
+        }
+
+        /* Динамика: появление блоков */
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            .reveal, .reveal.is-visible {
+                opacity: 1 !important;
+                transform: none !important;
+                transition: none !important;
+            }
+            .calculator-wrap::before,
+            .hero-image-header {
+                animation: none !important;
+            }
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(22px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .reveal.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-stagger .feature:nth-child(1) { transition-delay: 0.05s; }
+        .reveal-stagger .feature:nth-child(2) { transition-delay: 0.11s; }
+        .reveal-stagger .feature:nth-child(3) { transition-delay: 0.17s; }
+
+        @media (prefers-reduced-motion: no-preference) {
+            .hero-image-header {
+                animation: heroZoom 18s ease-in-out infinite alternate;
+            }
+
+            @keyframes heroZoom {
+                from { background-size: cover; background-position: 50% 45%; }
+                to   { background-size: cover; background-position: 50% 55%; }
+            }
+        }
+
+        /* ===== Адаптив ===== */
+        @media (max-width: 768px) {
+            .header-glass h1 { font-size: 28px; }
+            .header-glass .phone-big { font-size: 22px; }
+            .header-glass .subtitle { font-size: 18px; }
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 16px 12px; }
+            .header {
+                padding: 12px 16px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+            .logo { font-size: 18px; }
+            .phone { font-size: 16px; }
+            .header-glass {
+                width: 95%;
+                padding: 20px;
+                border-radius: 16px;
+            }
+            .header-glass h1 { font-size: 26px; }
+            .header-glass .subtitle { font-size: 16px; }
+            .header-glass .phone-big { font-size: 22px; }
+            .header-glass .btn { padding: 14px 24px; font-size: 15px; }
+            .features { grid-template-columns: 1fr; gap: 12px; }
+            .feature h3 { font-size: 16px; }
+            .feature p { font-size: 14px; }
+            .text { font-size: 14px; }
+            .services-list li { margin-bottom: 8px; }
+            .services-list li::before { left: -16px; }
+            .card-content h3 { font-size: 16px; }
+            .card-content p { font-size: 14px; }
+            .footer { font-size: 13px; padding: 16px; }
+        }
+
+        @media (min-width: 320px) and (max-width: 375px) {
+            .logo { font-size: 16px; }
+            .header-glass h1 { font-size: 24px; }
+            .header-glass .phone-big { font-size: 20px; }
+            .feature h3, .card-content h3 { font-size: 15px; }
+            .feature p, .card-content p { font-size: 13px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header glass reveal">
+            <div class="logo">эвакуатор<span>-мск-24</span></div>
+            <a class="phone" href="tel:+79260909121">+7(926)090 91-21</a>
+        </div>
+    </div>
+
+    <header class="hero-image-header reveal">
+        <div class="header-glass">
+            <h1>Эвакуатор <span>круглосуточно</span></h1>
+            <p class="subtitle">
+                Москва и область · Быстрый выезд · Любой транспорт<br>
+                От мотоциклов до коммерческого и спецтехники
+            </p>
+            <div class="phone-big"><a href="tel:+79260909121">+7(926)090 91-21</a></div>
+            <a class="btn" href="tel:+79260909121">Позвонить сейчас</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="features reveal-stagger">
+            <div class="feature glass reveal">
+                <h3>24/7</h3>
+                <p>Работаем круглосуточно без выходных</p>
+            </div>
+            <div class="feature glass reveal">
+                <h3>Быстро</h3>
+                <p>Выезд от 20 минут</p>
+            </div>
+            <div class="feature glass reveal">
+                <h3>Честно</h3>
+                <p>Фиксированные тарифы без сюрпризов</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="glass section-block reveal">
+            <h2>Надёжный эвакуатор по Москве и МО</h2>
+            <div class="text">
+                Эвакуатор — это надёжное решение для быстрой и безопасной транспортировки автомобилей и техники в сложных ситуациях.
+                Наша служба эвакуации предлагает широкий спектр услуг, обеспечивая комфорт и безопасность для клиентов.
+            </div>
+        </section>
+
+        <section class="glass section-block reveal">
+            <h2>Доверьте эвакуацию профессионалам!</h2>
+            <div class="text">
+                Мы знаем, как важно быстро и безопасно решить проблему с автомобилем. Вот почему клиенты выбирают нас:
+                <ul class="services-list">
+                    <li><strong>Скорость:</strong> эвакуатор выезжает сразу после вашего звонка.</li>
+                    <li><strong>Опыт:</strong> водители со стажем более 10 лет.</li>
+                    <li><strong>Безопасность:</strong> современная спецтехника для надёжной погрузки.</li>
+                    <li><strong>Честность:</strong> прозрачные цены без скрытых платежей.</li>
+                    <li><strong>Доступность:</strong> работаем круглосуточно, без выходных.</li>
+                    <li><strong>Универсальность:</strong> эвакуируем любые ТС — от мотоциклов до коммерческого транспорта.</li>
+                    <li><strong>Ответственность:</strong> гарантируем сохранность вашего авто.</li>
+                    <li><strong>Решительность:</strong> достанем машину из любого труднодоступного места.</li>
+                    <li><strong>Внимание:</strong> учитываем особенности каждой ситуации.</li>
+                    <li><strong>Репутация:</strong> сотни довольных клиентов и реальные отзывы.</li>
+                    <li><strong>Ориентирование:</strong> знаем город и область как свои пять пальцев.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="glass section-block highlight reveal">
+            <h2>🚨 Перевозка автомобилей Москва и Межгород 🚨</h2>
+            <ul class="services-list">
+                <li>✅ Работаем круглосуточно</li>
+                <li>✅ Низкие цены по договорённости</li>
+                <li>✅ Без посредников</li>
+                <li>✅ Межгород</li>
+                <li>✅ Цены после заказа не меняются</li>
+                <li>✅ Профессиональные водители с опытом от 10 лет</li>
+                <li>✅ Новейшее оборудование и автомобили</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="container">
+        <div class="calculator-wrap reveal" id="calculator">
+            <h2>Калькулятор эвакуатора</h2>
+            <p class="note" style="margin:0 0 10px;">Ориентировочная стоимость — уточняйте у диспетчера.</p>
+
+            <label for="vehicle">Тип транспорта</label>
+            <select id="vehicle">
+                <option value="moto" data-base="4000" data-perkm="100">Мотоциклы — 4000 ₽ + 100 ₽/км</option>
+                <option value="sedan" data-base="4000" data-perkm="100">Легковой седан — 4000 ₽ + 100 ₽/км</option>
+                <option value="minivan" data-base="4500" data-perkm="100">Легковой минивен — 4500 ₽ + 100 ₽/км</option>
+                <option value="cross" data-base="4500" data-perkm="100">Кроссоверы — 4500 ₽ + 100 ₽/км</option>
+                <option value="suv" data-base="5000" data-perkm="100">Внедорожник — 5000 ₽ + 100 ₽/км</option>
+                <option value="premium" data-base="5000" data-perkm="100">Premium седан — 5000 ₽ + 100 ₽/км</option>
+                <option value="sport" data-base="6000" data-perkm="100">Спорткары — 6000 ₽ + 100 ₽/км</option>
+                <option value="ditch" data-base="0" data-perkm="0">Кювет / застревание — по договорённости</option>
+                <option value="armored" data-base="2500" data-perkm="0">Бронированные авто (1 т) — 2500 ₽</option>
+                <option value="nohook" data-base="500" data-perkm="0">Нет крюка — 500 ₽</option>
+                <option value="gaz-short" data-base="6000" data-perkm="100">Газель / микроавтобус (короткая база)</option>
+                <option value="gaz-mid" data-base="7000" data-perkm="100">Газель / микроавтобус (средняя база)</option>
+                <option value="gaz-long" data-base="10000" data-perkm="100">Газель / микроавтобус (длинная база)</option>
+                <option value="sobol" data-base="5000" data-perkm="100">Соболь, Портер</option>
+                <option value="cargo" data-base="0" data-perkm="3000">Перевозка груза (за 1 т) — 3000 ₽/км</option>
+                <option value="spec" data-base="0" data-perkm="2500">Спецтехника — 2500 ₽/км</option>
+                <option value="wait" data-base="1500" data-perkm="0">Час ожидания — 1500 ₽</option>
+            </select>
+
+            <label for="km">Километраж (в одну сторону)</label>
+            <input id="km" type="number" min="0" step="1" value="0" inputmode="numeric" placeholder="Например, 15">
+
+            <label for="extras">Дополнительно</label>
+            <select id="extras">
+                <option value="0">Нет</option>
+                <option value="500">Нет крюка (+500 ₽)</option>
+                <option value="2500">Бронированное авто 1т (+2500 ₽)</option>
+                <option value="1500">Час ожидания (+1500 ₽)</option>
+            </select>
+
+            <label for="phone">Ваш телефон</label>
+            <input id="phone" type="tel" placeholder="+7 …" autocomplete="tel">
+
+            <label for="from">Адрес погрузки</label>
+            <input id="from" type="text" placeholder="Город, улица" autocomplete="street-address">
+
+            <label for="to">Адрес разгрузки (необязательно)</label>
+            <input id="to" type="text" placeholder="Куда везём">
+
+            <div class="total" id="totalDisplay">Итого: 0 ₽</div>
+
+            <button type="button" class="order-btn" id="orderBtn">Заказать</button>
+
+            <div class="contact">
+                <span>Или позвоните:</span>
+                <a href="tel:+79260909121">+7(926)090 91-21</a>
+            </div>
+
+            <p class="note">Для позиций «по договорённости» в калькуляторе не заложена фиксированная цена — оставьте заявку или позвоните.</p>
+            <p class="disclaimer">Отправка заявки требует файл <code>send-order.php</code> на сервере.</p>
+        </div>
+    </div>
+
+    <div class="container reveal">
+        <h2 class="tariffs-heading">Тарифы</h2>
+        <div class="scroll-container" id="tariffsScroll">
+            <div class="cards">
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3>Мотоциклы</h3>
+                        <p>4000 ₽ + 100 ₽ / км</p>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3>Легковой седан</h3>
+                        <p>4000 ₽ + 100 ₽ / км</p>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3>Легковой минивен</h3>
+                        <p>4500 ₽ + 100 ₽ / км</p>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3>Кроссоверы</h3>
+                        <p>4500 ₽ + 100 ₽ / км</p>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3>Внедорожник</h3>
+                        <p>5000 ₽ + 100 ₽ / км</p>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3>Premium седан</h3>
+                        <p>5000 ₽ + 100 ₽ / км</p>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3>Спорткары</h3>
+                        <p>6000 ₽ + 100 ₽ / км</p>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3>Вытащить из кювета / Застревание</h3>
+                        <p>Кювет / застрял — по договорённости</p>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3>Бронированные авто (1 т)</h3>
+                        <p>2500 ₽</p>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3>Нет крюка</h3>
+                        <p>500 ₽</p>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3>Газели, микроавтобусы (короткая база)</h3>
+                        <p>6000 ₽ + 100 ₽ / км</p>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3>Газели, микроавтобусы (средняя база)</h3>
+                        <p>7000 ₽ + 100 ₽ / км</p>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3>Газели, микроавтобусы (длинная база)</h3>
+                        <p>10.000 ₽ + 100 ₽ / км</p>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3>Соболь, Портер</h3>
+                        <p>5000 ₽ + 100 ₽ / км</p>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3>Перевозка груза (за 1 т)</h3>
+                        <p>3000 ₽ / км</p>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3>Спецтехника</h3>
+                        <p>2500 ₽ / км</p>
+                    </div>
+                </div>
+                <div class="card glass">
+                    <div class="card-content">
+                        <h3>Час ожидания</h3>
+                        <p>1500 ₽</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        © 2024 эвакуатор-мск-24 | Круглосуточно | Москва и область
+    </footer>
+
+    <script>
+        (function () {
+            if (!('IntersectionObserver' in window)) {
+                document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-visible'); });
+                return;
+            }
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-visible'); });
+                return;
+            }
+            var els = document.querySelectorAll('.reveal');
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { rootMargin: '0px 0px -6% 0px', threshold: 0.07 });
+            els.forEach(function (el) { io.observe(el); });
+        })();
+
+        function getResult() {
+            var vehicle = document.getElementById('vehicle');
+            var km = parseFloat(document.getElementById('km').value) || 0;
+            var extraCost = parseFloat(document.getElementById('extras').value) || 0;
+            var opt = vehicle.selectedOptions[0];
+            var basePrice = parseFloat(opt.getAttribute('data-base')) || 0;
+            var perKm = parseFloat(opt.getAttribute('data-perkm'));
+            if (isNaN(perKm)) perKm = 100;
+            return basePrice + (km * perKm) + extraCost;
+        }
+
+        function updateButtonText() {
+            var total = getResult();
+            var formatted = total.toLocaleString('ru-RU');
+            document.getElementById('orderBtn').textContent = 'Заказать за ' + formatted + ' ₽';
+            document.getElementById('totalDisplay').textContent = 'Итого: ' + formatted + ' ₽';
+        }
+
+        async function sendOrder() {
+            var total = getResult();
+            var phone = document.getElementById('phone').value.trim();
+            var from = document.getElementById('from').value.trim();
+            var to = document.getElementById('to').value.trim();
+            var vehicleEl = document.getElementById('vehicle');
+            var vehicleType = vehicleEl.options[vehicleEl.selectedIndex].text;
+
+            if (!phone || !from) {
+                alert('Пожалуйста, введите телефон и адрес погрузки!');
+                return;
+            }
+
+            try {
+                var response = await fetch('/send-order.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        phone: phone,
+                        from: from,
+                        to: to,
+                        vehicleType: vehicleType,
+                        total: total
+                    })
+                });
+
+                if (response.ok) {
+                    alert('Заказ успешно отправлен! Водитель свяжется с вами.');
+                } else {
+                    alert('Ошибка при отправке. Проверьте настройки бота.');
+                }
+            } catch (err) {
+                alert('Ошибка сети. Попробуйте позже.');
+            }
+        }
+
+        document.getElementById('vehicle').addEventListener('change', updateButtonText);
+        document.getElementById('km').addEventListener('input', updateButtonText);
+        document.getElementById('extras').addEventListener('change', updateButtonText);
+        document.getElementById('orderBtn').addEventListener('click', sendOrder);
+        updateButtonText();
+
+        var scrollContainer = document.getElementById('tariffsScroll');
+        var scrollPosition = 0;
+        var scrollStep = 252;
+        var intervalTime = 5000;
+        var autoScrollInterval = setInterval(autoScroll, intervalTime);
+
+        function autoScroll() {
+            if (!scrollContainer) return;
+            if (scrollContainer.scrollWidth > scrollContainer.clientWidth) {
+                scrollPosition += scrollStep;
+                if (scrollPosition >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+                    scrollPosition = 0;
+                }
+                scrollContainer.scrollTo({ left: scrollPosition, behavior: 'smooth' });
+            }
+        }
+
+        if (scrollContainer) {
+            scrollContainer.addEventListener('touchstart', function () {
+                clearInterval(autoScrollInterval);
+            });
+        }
+    </script>
+</body>
+</html>
